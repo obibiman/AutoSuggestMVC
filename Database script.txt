@@ -1,0 +1,34 @@
+﻿USE [master]
+GO
+
+Create Database [MVCAutoComplete]
+go
+
+USE [MVCAutoComplete]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[AutoSuggestBox](
+	[StudentId] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NULL,
+	[Email] [nvarchar](500) NULL,
+	[Class] [nvarchar](50) NULL,
+	[EnrollYear] [nvarchar](50) NULL,
+	[City] [nvarchar](50) NULL,
+	[Country] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+-- INSERT INTO [MVCAutoComplete].[dbo].[AutoSuggestBox] ([Name] ,[Email] ,[Class] ,[EnrollYear] ,[City] ,[Country]) 
+--VALUES 
+--('Alice Mendoza','AliceMendoza@lsu.edu','Engl 119', '2014','New Orleans, Louisiana','United States of America') 
+
+--INSERT INTO [MVCAutoComplete].[dbo].[AutoSuggestBox]  ([Name] ,[Email] ,[Class] ,[EnrollYear] ,[City] ,[Country]) 
+--VALUES 
+--('Timothy Bennett','Timothy@ncsu.edu','History 231', '2009','Chappel Hill, North Carolina','United States of America') 
